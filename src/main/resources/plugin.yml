@@ -1,0 +1,17 @@
+name: EchoLog
+version: '${project.version}'
+main: dev.eministar.echolog.EchoLogPlugin
+api-version: '1.21'
+authors: [Eministar]
+description: The ultimate logging plugin.
+website: https://star-dev.xyz/
+commands:
+  echolog:
+    description: EchoLog Einstellungen & Admin-Tools
+    usage: /echolog [reload|gui]
+    permission: echolog.use
+permissions:
+  echolog.use:
+    default: op
+  echolog.view:
+    default: true

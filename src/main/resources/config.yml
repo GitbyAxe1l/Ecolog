@@ -1,0 +1,57 @@
+# ==============================================
+#  EchoLog – Hauptkonfiguration
+# ==============================================
+
+# ---------[ Allgemeine GUI-Einstellungen ]---------
+gui:
+  rows: 5                # Standard-Anzahl der Reihen in der Main-GUI
+  filler-glass: true     # Graue Glas-Panes als Hintergrund
+
+# ---------[ Ausgaben / Outputs ]---------
+outputs:
+  file:
+    enabled: true              # Schreibt Logs in Dateien
+    folder: "logs/echolog"     # Ziel-Ordner (pro Tag werden Unterordner erstellt)
+  discord:
+    enabled: false             # Discord-Ausgabe aktivieren?
+    default-webhook: ""        # Fallback-WebHook (wenn kein spezifischer pro Log gesetzt)
+
+# ---------[ Logs ]---------
+logs:
+
+  chat:
+    enabled: true
+    simplified-message: false
+    format: "[%time%] %player%: %message%"
+    discord-webhook: ""
+
+  join_quit:
+    enabled: true
+    simplified-message: false
+    join-format: "[%time%] + %player% joined (%uuid%)"
+    quit-format: "[%time%] - %player% quit (%uuid%)"
+    discord-webhook: ""
+
+  death:
+    enabled: true
+    simplified-message: false
+    format: "[%time%] ☠ %player% died: %reason% at %world% (%x%/%y%/%z%)"
+    discord-webhook: ""
+
+  commands:
+    enabled: true
+    simplified-message: false
+    format: "[%time%] /%command% by %player%"
+    discord-webhook: ""
+
+  teleport:
+    enabled: true
+    simplified-message: false
+    format: "[%time%] %player% teleported %from% -> %to%"
+    discord-webhook: ""
+
+  block:
+    enabled: true
+    simplified-message: false
+    format: "[%time%] %player% %action% %block% at %world% (%x%/%y%/%z%)"
+    discord-webhook: ""
