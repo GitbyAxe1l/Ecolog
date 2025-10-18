@@ -73,5 +73,6 @@ public class EchoLogPlugin extends JavaPlugin {
         configManager.reload();
         langManager.reload();
         logDispatcher.reload();
+        //hi
     }
 }
