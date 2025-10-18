@@ -1,10 +1,9 @@
 name: EchoLog
 version: '${project.version}'
-main: dev.eministar.echolog.EchoLogPlugin
+main: org.Axe1l.echolog.EchoLogPlugin
 api-version: '1.21'
-authors: [Eministar]
+authors: [axe1l]
 description: The ultimate logging plugin.
-website: https://star-dev.xyz/
 commands:
   echolog:
     description: EchoLog Einstellungen & Admin-Tools
